@@ -1,0 +1,193 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.add-goal-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-goal-form input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-goal-form button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-goal-form button:hover {
+  background-color: #45a049;
+}
+
+.goals-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.goals-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #040303;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.goal-text {
+  flex: 1;
+}
+
+.goal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn,
+.cancel-btn {
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  color: #3498db;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+.save-btn {
+  color: #2e33cc;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.save-btn:hover,
+.cancel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.goals-container li.editing {
+  background-color: #45e678;
+}
+
+.goals-container li.editing input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #3498db;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: rgb(197, 121, 238);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.cancel-btn {
+  background-color: #484747;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #c0392b;
+}
